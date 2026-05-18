@@ -3,7 +3,7 @@ import mysql.connector
 
 fake = Faker()
 
-# Connect to MySQL
+# Connecting to MySQL
 connection = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -13,7 +13,7 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 
-# Insert fake customers
+# Inserting fake customers
 for i in range(20):
     name = fake.name()
     city = fake.city()
